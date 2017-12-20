@@ -1,7 +1,10 @@
 language: scala
+jdk: oraclejdk8
 scala:
    - 2.11.7
 deploy:
   provider: azure_web_apps
+  skip_cleanup: true
+  verbose: true
   on:
     all_branches: true
